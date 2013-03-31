@@ -1,0 +1,23 @@
+<!DOCTYPE html/>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>Wines</h1>
+<p>Weinkeller</p>
+<div id="wines">
+    <% wines.forEach(function(wine) { %>
+    <div class="wine">
+        <li>
+            <img src='/images/<%=wine.picture%>'/>
+            <h2><%=wine.name%></h2>
+            <h3><%=wine.country%></h3>
+
+        </li>
+    </div>
+    <% }) %>
+</div>
+</body>
+</html>
